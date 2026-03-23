@@ -7,10 +7,6 @@ import url from "url";
 import recipeRoutes from "./routes/recipeRouter.js";
 import PDFRouter from "./routes/PDFRouter.js";
 
-// Debug: verify that email environment variables are loaded (remove after debug)
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "EXISTS" : "MISSING");
-
 const app = express();
 const port = 3000;
 
